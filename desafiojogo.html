@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Aula Alura Usuario JS</title>
+    </head>
+    <body>
+        <script>
+
+            function pulaLinha() {
+    
+                document.write("<br>");
+                document.write("<br>");
+            }
+    
+            function mostra(frase) {
+    
+                document.write(frase);
+                pulaLinha();
+            }
+
+            function sorteia() {
+
+                return Math.round(Math.random() * 10)
+            }
+
+            var numeroPensado = sorteia();
+            var chute = parseInt(prompt("Já pensei em um número. Qual você acha que é?"));
+            console.log(numeroPensado)
+
+            if (chute == numeroPensado ) {
+
+                mostra("Uau! Você acertou, realmente o número que pensei foi " + numeroPensado + "!");
+            }
+
+            if (numeroPensado > chute) {
+
+                mostra("O número que eu pensei é maior do que esse.");
+            } else {
+
+                if(numeroPensado < chute) {
+                    mostra("O número que eu pensei é menor do que esse.")
+                } else {
+                    if(numeroPensado == chute) {
+                        
+                    }
+                }
+            }
+
+            
+        </script>
+    </body>
+</html>
